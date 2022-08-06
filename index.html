@@ -10,15 +10,35 @@
   <body>
     <header>
       <h1 class="page-title">Taskinator 2: The Sequel</h1>
-      <p>Click the button below to add you next task!</p>
-      <button class="btn" id="save-task">Add Your Task</button>
+      <p>Click the button below to add your next task!</p>
+      <form id="task-form">
+        <div class="form-group">
+          <input
+            type="text"
+            name="task-name"
+            class="text-input"
+            placeholder="Enter Your Task Here!"
+          />
+        </div>
+        <div class="form-group" >
+          <select name="task-type" class="select-dropdown">
+            <option value="" disabled selected>Select a Task Type</option>
+            <option value="Print">Print</option>
+            <option value="Web">Web</option>
+            <option value="Mobile">Mobile</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <button class="btn" id="save-task" type="submit">
+            Add Your Task!
+          </button>
+        </div>
+      </form>
     </header>
     <main class="page-content">
       <section class="task-list-wrapper">
         <h2 class="list-title">Tasks to Get Done</h2>
-        <ul class="task-list" id="tasks-to-do">
-          <li class="task-item">Soon!</li>
-        </ul>
+        <ul class="task-list" id="tasks-to-do"></ul>
       </section>
     </main>
 
