@@ -13,6 +13,7 @@
       <p>Click the button below to add your next task!</p>
       <form id="task-form">
         <div class="form-group">
+          <!-- input is wrapped in div to simplify its positioning  -->
           <input
             type="text"
             name="task-name"
@@ -21,6 +22,7 @@
           />
         </div>
         <div class="form-group" >
+          <!-- dropdown is wrapped in div to simplify its positioning  -->
           <select name="task-type" class="select-dropdown">
             <option value="" disabled selected>Select a Task Type</option>
             <option value="Print">Print</option>
@@ -29,6 +31,7 @@
           </select>
         </div>
         <div class="form-group">
+          <!-- button is wrapped in div to simplify its positioning  -->
           <button class="btn" id="save-task" type="submit">
             Add Your Task!
           </button>
