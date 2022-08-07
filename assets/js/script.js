@@ -12,6 +12,9 @@ if (!taskNameInput || !taskTypeInput) {
   return false;
 }
 
+//reset form to improve usability
+formEl.reset();
+
   // package up data as an object
   var taskDataObj = {
       name: taskNameInput,
